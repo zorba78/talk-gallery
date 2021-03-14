@@ -1,0 +1,151 @@
+---
+title: "Minimally Clinically Important Difference"
+subtitle: "Review in Statistical ASpects"
+author: "<strong>Boncho Ku, Ph.D. in Statistics</strong>"
+institute: "<br/> Korea Institute of Oriental Medicine"
+date: "<br> 2021/03/23 "
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, ../assets/css/footer.css, ../assets/css/metropolis-ak.css]
+    # lib_dir: "../docs/libs"
+    lib_dir: "libs"
+    nature:
+      highlightStyle: github
+      titleSlideClass: [middle, left]
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup-knitr, include=FALSE}
+options(htmltools.dir.version = FALSE)
+# knitr::opts_knit$set(root.dir='..')
+knitr::opts_chunk$set(eval = TRUE, 
+                      echo = FALSE, 
+                      cache = FALSE,
+                      include = TRUE,
+                      collapse = FALSE,
+                      message=FALSE,
+                      warning=FALSE, 
+                      dependson = NULL,
+                      engine = "R", # Chunks will always have R code, unless noted
+                      error = TRUE,
+                      fig.path="Figures/",  # Set the figure options
+                      fig.align = "center", 
+                      #fig.width = 7,
+                      #fig.height = 7, 
+                      fig.keep='all', fig.retina=3)
+
+```
+
+
+```{r setup-library}
+library(tidyverse)
+library(MASS)
+library(reshape2)
+library(plyr)
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(tidyselect)
+library(tidystats)
+library(glue)
+library(here)
+library(gt)
+library(gtsummary)
+library(kableExtra)
+
+```
+
+
+
+# `r emo::ji("wave")` Hello
+
+### me: **Boncho Ku**
+
+- **Statistician**, _Korea Institute of Oriental Medicine_
+    + github: **@zorba78**
+    + email: **secondmoon@kiom.re.kr**
+
+- **Team**: Clinical Research Coordinating Team    
+
+
+### Current Works in KIOM
+
+.pull-left[
+#### **Data Science**
+- Statistical learning model
+- Text mining
+- Data linkage/statistical matching
+- Data management
+]
+
+
+.pull-right[
+#### **Biostatistics**
+- Experiment & study design: RCT and observational study 
+- Sample size calculation
+- Statistical consulting and lecturing
+]
+
+
+### Slides: **https://zorba78.github.io/ust-medical-statistics**
+
+---
+
+class: inverse, center, middle
+
+# Small reviews for Statistics 
+
+
+---
+
+# Statistical Significance
+
+
+---
+
+
+# Myth of P-value 
+
+
+
+---
+
+class: inverse, center, middle
+
+# Minimally Clinically Important Difference
+
+
+---
+
+# Definition
+
+
+---
+
+# Anchor Methods
+
+
+
+---
+
+# Distribution-based Methods
+
+
+
+---
+
+# Delphi Methods
+
+
+---
+
+class: inverse, center, middle
+
+# Applications
+
+
+
+
