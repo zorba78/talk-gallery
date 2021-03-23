@@ -122,9 +122,7 @@ and providing several lectures related to R programming and statistics
 >
 > ### 2. Minimally Clinically Important Change (MCID)
 >
-> ### 3. Examples
-
-> ### 4. Discussion
+> ### 3. Discussion
 
 
 
@@ -144,6 +142,43 @@ class: inverse, center, middle
 
 
 ---
+
+# <img src="assets/icons/history.svg" width="6%"/> History of "_statistical significance_"
+
+### `r icons::fontawesome("long-arrow-alt-down", style="solid")` Flows
+
+> - Edgeworth firstly mentioned `r AutoCite(mybib, "Edgeworth-1885")`
+>
+> - Sir Ronard A. Fisher described "_the test of significance_" in his book <**_Statistical Methods for Research Workers_**>
+>
+> - Original intention
+>     - **FY. Edgeworth**: mentioned as a tool to indicate when a result needs further scrutiny
+>     - **RA. Fisher**: intended to blend data and background knowledge to lead to scientific conclusions
+
+
+In the 19<sup>th</sup> century $\rightarrow$ **the obtained value shows something meaningful**
+
+
+In the 20<sup>th</sup> century $\rightarrow$ "**_very important_**"
+
+
+---
+
+# <img src="assets/icons/history.svg" width="6%"/> History of "_statistical significance_"
+
+
+### `r icons::fontawesome("long-arrow-alt-down", style="solid")` Flows (_continued_)
+
+> - Evidence-based decision making movement
+>
+> - Lead by the most influential statisticians (**Jerzy Neyman** and **Egon Pearson**)
+>
+> - Neyman & Pearson introduced: 
+>   - Statistical power, false positive, false negative and so many important concepts related to statistics
+>   - Intendedly left out the **_P-value_**
+
+---
+
 
 # `r icons::fontawesome("asterisk", style = "solid")` Argue in the Statistical Significance 
 
@@ -217,41 +252,6 @@ Sir Ronald Aylmer Fisher
 
 ---
 
-# <img src="assets/icons/history.svg" width="6%"/> History of "_statistical significance_"
-
-### `r icons::fontawesome("long-arrow-alt-down", style="solid")` Flows
-
-> - Edgeworth firstly mentioned `r AutoCite(mybib, "Edgeworth-1885")`
->
-> - Sir Ronard A. Fisher described "_the test of significance_" in his book <**_Statistical Methods for Research Workers_**>
->
-> - Original intention
->     - **FY. Edgeworth**: mentioned as a tool to indicate when a result needs further scrutiny
->     - **RA. Fisher**: intended to blend data and background knowledge to lead to scientific conclusions
-
-
-In the 19<sup>th</sup> century $\rightarrow$ **the obtained value shows something meaningful**
-
-
-In the 20<sup>th</sup> century $\rightarrow$ "**_very important_**"
-
-
----
-
-# <img src="assets/icons/history.svg" width="6%"/> History of "_statistical significance_"
-
-
-### `r icons::fontawesome("long-arrow-alt-down", style="solid")` Flows (_continued_)
-
-> - Evidence-based decision making movement
->
-> - Lead by the most influential statisticians (**Jerzy Neyman** and **Egon Pearson**)
->
-> - Neyman & Pearson introduced: 
->   - Statistical power, false positive, false negative and so many important concepts related to statistics
->   - Intendedly left out the **_P-value_**
-
----
 
 # <img src="assets/icons/history.svg" width="6%"/> History of "_statistical significance_"
 
@@ -548,6 +548,19 @@ $\rightarrow$ don't use $p < 0.05$ and **\*\***, something like that
 
 ???
 
+1. 유의성만 보고
+2. 모수에 대한 확률이 아님
+3. 높은 P값이 귀무가설이 옳다는 증거로 사용되는 오류
+   - 증거의 불충분함을 의미함  
+   - 귀무가설의 옳고그름을 증명하는 것은 불가능 
+   H0: 두 집단 간 평균 차이가 없다면 효과가 없다 
+   H1: 두 집단 간 평균 차이가 있다면 효과가 있다
+   
+귀무가설에 대한 대우명제는 효과가 없다면 두 집단 간 평균 차이가 있다임
+
+4. 낮은 P-값이 항상 의미가 있다고 이해하는 오류
+5. 신뢰구간을 무시
+
 1. P-values can indicate how incompatible the data are with a
 specified statistical model.
 2. P-values do not measure the probability that the studied
@@ -653,6 +666,10 @@ Schünemann et al., 2005b). Schünemann et al.(2005b)은 MID를 다음과 같이
 
 
 
+???
+
+그 외 도구정의 접근법
+누적분포법 -> 도구점수의 변화를 X축으로 해서 이 점수 변화를 cut-off 사용 시 responder 비율을 Y에 제시
 
 ---
 
