@@ -127,6 +127,20 @@ Sir. Ronald A. Fisher&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(1890 ~ 1
 ]
 
 
+
+???
+Sir Ronald Aylmer Fisher
+
+통계적 검정법은 K. Pearson과 W. Gosset의 경우를 제
+외하고 나면 흔히‘유의성검정 (significance test)’이라고 불리는 Fisher의 검정법과‘가
+설검정 (hypotheses test)’이라고 불리는 Neyman-Pearson의 검정법이 등장한 1920–
+1930년대부터 시작된다.
+
+1925년에는 Fisher의 책 Statistical Methods for Research Workers를 통해 유의성검정
+(test of significance)이 처음 소개되었고 이어서 1928년과 1933년에 Neyman-Pearson
+의 가설검정 (test of hypotheses) 연구가 나왔다
+
+
 ---
 
 # &lt;img src="assets/icons/creativity.svg" width="6%"/&gt; Motivation of Fisher
@@ -149,6 +163,17 @@ Sir. Ronald A. Fisher&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(1890 ~ 1
 --
 
 ## That is, a famous **Fisher's Exact Test**
+
+
+
+
+???
+
+통계학의 기틀이 다져지던 무렵 영국의 한 귀부인은 밀크홍차의 맛만 보고 우유와 차를 따른 순서를 구분할 수 있다고 주장하였다. 
+이를 믿지 않았던 피셔는 귀무가설을 설정하고 이를 증명하는 실험을 준비한다. 
+우유와 차를 다른 순서로 따른 홍차를 4개씩 준비하여 총 8개를 무작위의 순서로 귀부인에게 맛보게 한 뒤 답을 말하게 하였다. 
+설계가 허망하게 귀부인은 차를 만든 순서를 모두 맞추었다. 
+하지만 피셔는 ‘차 마시는 여인’의 문제를 통해 귀무가설과 무작위를 이용한 가설 검정기법을 제시한다
 
 ---
 
@@ -213,6 +238,23 @@ then accept `\(H_{1}\)`; Otherwise accept `\(H_{0}\)`
 ###&lt;svg viewBox="0 0 448 512" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"&gt;&lt;/path&gt;&lt;/svg&gt; Today, **HYBRID** both paradigms
 
 
+???
+
+Fisher
+
+H0 를 반증(disprove)할 수는 있으나 증명하거나 채택할 수는 없다.
+검정의 결과는 임시적인 것으로서 다시 고칠 수 있어야한다.
+검정통계량을 임의로 선택한다. 최
+적검정법 (optimal test) 라는 보장이 없다.
+유의한 결과가 나와도 H1 이 없으므로 구체적인 결론을 내릴 수 없
+다. 유의한 결과가 나오지 않으면 결론은 더욱 모호하다.
+
+P-Neyman
+제품의 합격-불합격 판정을 할 때에나 쓸 수 있는 것으로서 일반적인 
+과학 연구에서의 추론 방법으로적절하지 않다.
+현실적인 과학실험에서는 동일한 검정을 반복해서 얻는 확률의 개념
+이 타당하지 않다.
+
 ---
 
 
@@ -252,6 +294,16 @@ about once in the two times `\(\rightarrow\)` insufficient to reject `\(H_{0}\)`
 &gt; Assume an RCT to investigate the efficacy of the treatment drug and obtain the result of `\(P=0.108\)`. 
 &gt;
 &gt; What is your interpretation of the result?
+
+
+???
+
+우리가 얻은 데이터로부터 도출한 통계량만큼의 값을 귀무가설 하에서 관찰할 확률 
+
+p=0.5 이면 두 번에 한번 꼴로 우리가 표본으로부터 획득한 통계량을 귀무가설 하의 분포에서 관찰할 수 있음
+p=0.0000001 이면 매우 낮은 확률로 우리가 얻은 통계량이 귀무가설 하의 분포에서 관찰됨. 즉 거의 관찰되지 않음. 
+귀무가설을 기각함. 
+
 
 
 ---
